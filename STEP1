@@ -1,0 +1,12 @@
+[Python3.6 버전 설치]
+yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+yum install -y python36u
+yum install -y python36u-devel
+yum install -y python36u-pip
+
+[Python3.6을 기본 Python 버전으로 설정]
+# vi /root/.bashrc
+alias python="/usr/bin/python3.6"	
+
+# source /root/.bashrc
+# python --version
